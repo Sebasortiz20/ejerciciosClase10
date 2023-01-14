@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ejercicio4Clase10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ysd-ez-3kY">
+                                <rect key="frame" x="140" y="408.33333333333331" width="113" height="35.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="presioname">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.20000000000000001" green="0.66274509800000003" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="accionAlTocarBotonPresioname:" destination="BYZ-38-t0r" eventType="touchUpInside" id="COJ-gp-aw2"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oca-ke-67m">
+                                <rect key="frame" x="257.33333333333331" y="135.33333333333334" width="125.66666666666669" height="81.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERDIDOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sP3-2L-83r">
+                                        <rect key="frame" x="0.0" y="0.0" width="125.66666666666667" height="20"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.66274509800000003" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taG-ZM-jqb">
+                                        <rect key="frame" x="0.0" y="35" width="125.66666666666667" height="46.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="taG-ZM-jqb" secondAttribute="bottom" id="CJU-vQ-vKj"/>
+                                    <constraint firstItem="taG-ZM-jqb" firstAttribute="top" secondItem="sP3-2L-83r" secondAttribute="bottom" constant="15" id="SzU-p8-WeW"/>
+                                    <constraint firstItem="sP3-2L-83r" firstAttribute="top" secondItem="oca-ke-67m" secondAttribute="top" id="Xbz-tb-0se"/>
+                                    <constraint firstItem="taG-ZM-jqb" firstAttribute="leading" secondItem="oca-ke-67m" secondAttribute="leading" id="q9H-gA-VTw"/>
+                                    <constraint firstAttribute="trailing" secondItem="taG-ZM-jqb" secondAttribute="trailing" id="u9h-Wu-Zll"/>
+                                    <constraint firstAttribute="trailing" secondItem="sP3-2L-83r" secondAttribute="trailing" id="v5c-Of-TDm"/>
+                                    <constraint firstItem="sP3-2L-83r" firstAttribute="leading" secondItem="oca-ke-67m" secondAttribute="leading" id="y1j-sL-D4f"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3y6-yX-Qzr">
+                                <rect key="frame" x="145.66666666666666" y="135" width="101.66666666666666" height="82"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUGADOS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xn-Vf-lny">
+                                        <rect key="frame" x="0.0" y="0.0" width="101.66666666666667" height="20"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.66274509800000003" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aF-nL-J9s">
+                                        <rect key="frame" x="0.0" y="35" width="101.66666666666667" height="47"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="4aF-nL-J9s" firstAttribute="top" secondItem="3Xn-Vf-lny" secondAttribute="bottom" constant="15" id="8fq-nf-axn"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Xn-Vf-lny" secondAttribute="trailing" id="GEs-wa-Smq"/>
+                                    <constraint firstItem="3Xn-Vf-lny" firstAttribute="leading" secondItem="3y6-yX-Qzr" secondAttribute="leading" id="OKm-bm-eHW"/>
+                                    <constraint firstAttribute="trailing" secondItem="4aF-nL-J9s" secondAttribute="trailing" id="YYp-aA-mM6"/>
+                                    <constraint firstItem="3Xn-Vf-lny" firstAttribute="top" secondItem="3y6-yX-Qzr" secondAttribute="top" id="cFZ-f4-n1p"/>
+                                    <constraint firstAttribute="bottom" secondItem="4aF-nL-J9s" secondAttribute="bottom" id="oSN-ly-Apo"/>
+                                    <constraint firstItem="4aF-nL-J9s" firstAttribute="leading" secondItem="3y6-yX-Qzr" secondAttribute="leading" id="sLo-u6-cGH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VP1-Zq-YuL">
+                                <rect key="frame" x="10.000000000000007" y="135.33333333333334" width="125.66666666666669" height="81.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GANADOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6S3-Oq-LP7">
+                                        <rect key="frame" x="9" y="0.0" width="107.66666666666667" height="20"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.66274509800000003" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXe-gP-kcj">
+                                        <rect key="frame" x="0.0" y="35" width="125.66666666666667" height="46.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="6S3-Oq-LP7" firstAttribute="top" secondItem="VP1-Zq-YuL" secondAttribute="top" id="1kM-EM-bas"/>
+                                    <constraint firstItem="DXe-gP-kcj" firstAttribute="leading" secondItem="VP1-Zq-YuL" secondAttribute="leading" id="CHn-WA-G6e"/>
+                                    <constraint firstAttribute="bottom" secondItem="DXe-gP-kcj" secondAttribute="bottom" id="IPc-2h-1bX"/>
+                                    <constraint firstAttribute="trailing" secondItem="DXe-gP-kcj" secondAttribute="trailing" id="NVS-WD-QYv"/>
+                                    <constraint firstItem="6S3-Oq-LP7" firstAttribute="centerX" secondItem="VP1-Zq-YuL" secondAttribute="centerX" id="R6y-cb-mqj"/>
+                                    <constraint firstItem="DXe-gP-kcj" firstAttribute="top" secondItem="6S3-Oq-LP7" secondAttribute="bottom" constant="15" id="iVl-l2-btd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oca-ke-67m" firstAttribute="leading" secondItem="3y6-yX-Qzr" secondAttribute="trailing" constant="10" id="1Qm-QD-GJv"/>
+                            <constraint firstItem="VP1-Zq-YuL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-250" id="8Lc-kd-Uep"/>
+                            <constraint firstItem="VP1-Zq-YuL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="DiL-DI-jge"/>
+                            <constraint firstItem="3y6-yX-Qzr" firstAttribute="leading" secondItem="VP1-Zq-YuL" secondAttribute="trailing" constant="10" id="FJJ-tO-KnO"/>
+                            <constraint firstItem="3y6-yX-Qzr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-250" id="GO1-pT-mJK"/>
+                            <constraint firstItem="3y6-yX-Qzr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LMF-gJ-vJ9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oca-ke-67m" secondAttribute="trailing" constant="10" id="Lcr-Z6-rcJ"/>
+                            <constraint firstItem="Ysd-ez-3kY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MP2-2e-oOA"/>
+                            <constraint firstItem="3y6-yX-Qzr" firstAttribute="leading" secondItem="VP1-Zq-YuL" secondAttribute="trailing" constant="10" id="Mwp-kL-oym"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ysd-ez-3kY" secondAttribute="bottom" constant="374.33333333333331" id="WeI-Uc-Ted"/>
+                            <constraint firstItem="Ysd-ez-3kY" firstAttribute="centerX" secondItem="3y6-yX-Qzr" secondAttribute="centerX" id="lkP-G0-7Uz"/>
+                            <constraint firstItem="oca-ke-67m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-250" id="oBb-0n-CSd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="juegosGanadosLabel" destination="DXe-gP-kcj" id="EqW-lr-Ktg"/>
+                        <outlet property="juegosPerdidosLabel" destination="taG-ZM-jqb" id="s69-fs-Tyf"/>
+                        <outlet property="juegosTotalesLabel" destination="4aF-nL-J9s" id="kqX-s7-mPl"/>
+                        <outlet property="presionameBotonOutlet" destination="Ysd-ez-3kY" id="1u8-SC-2hp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
