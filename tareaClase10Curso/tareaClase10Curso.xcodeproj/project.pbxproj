@@ -41,6 +41,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC232F362975B0CF00643976 /* Configuracion */ = {
+			isa = PBXGroup;
+			children = (
+				FCCD26FC2964C0CF00631222 /* ConfiguracionViewController.swift */,
+			);
+			path = Configuracion;
+			sourceTree = "<group>";
+		};
+		FC232F372975B0F500643976 /* Temporizador */ = {
+			isa = PBXGroup;
+			children = (
+				FCCD270C2964C12800631222 /* TemporizadorViewController.swift */,
+			);
+			path = Temporizador;
+			sourceTree = "<group>";
+		};
 		FCCD26EC2964C0CF00631222 = {
 			isa = PBXGroup;
 			children = (
@@ -60,10 +76,10 @@
 		FCCD26F72964C0CF00631222 /* tareaClase10Curso */ = {
 			isa = PBXGroup;
 			children = (
+				FC232F372975B0F500643976 /* Temporizador */,
+				FC232F362975B0CF00643976 /* Configuracion */,
 				FCCD26F82964C0CF00631222 /* AppDelegate.swift */,
 				FCCD26FA2964C0CF00631222 /* SceneDelegate.swift */,
-				FCCD26FC2964C0CF00631222 /* ConfiguracionViewController.swift */,
-				FCCD270C2964C12800631222 /* TemporizadorViewController.swift */,
 				FCCD26FE2964C0CF00631222 /* Main.storyboard */,
 				FCCD27012964C0D100631222 /* Assets.xcassets */,
 				FCCD270E2964D26900631222 /* sonidoSuperMario.mp3 */,

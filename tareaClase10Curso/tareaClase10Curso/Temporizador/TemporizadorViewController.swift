@@ -25,16 +25,16 @@ class TemporizadorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        actualizacionDeLaVista()
+        actualizarLaVista()
         iniciarTemporizador()
     }
     
-    private func actualizacionDeLaVista() {
-        actualizacionTiempoDeEsperaLabel()
-        actualizacionBarraDeProgreso()
+    private func actualizarLaVista() {
+        actualizarTiempoDeEsperaLabel()
+        actualizarBarraDeProgreso()
     }
     
-    private func actualizacionTiempoDeEsperaLabel() {
+    private func actualizarTiempoDeEsperaLabel() {
         tiempoDeEsperaLabel.text = obtenerTextoDeTiempoDeEspera()
     }
     
@@ -56,7 +56,7 @@ class TemporizadorViewController: UIViewController {
         return "\(minutosAString):\(segundosAString)"
     }
     
-    private func actualizacionBarraDeProgreso() {
+    private func actualizarBarraDeProgreso() {
         tiempoDeEsperaBarraDeProgreso.progress = obtenerProgreso()
     }
     
@@ -71,18 +71,18 @@ class TemporizadorViewController: UIViewController {
         temporizador = Timer.scheduledTimer(
             timeInterval: 1.0,
             target: self,
-            selector: #selector(procesoTick),
+            selector: #selector(procesarTick),
             userInfo: nil,
             repeats: true)
     }
     
-    @objc func procesoTick() {
+    @objc func procesarTick() {
         guard let tiempoDeEspera = tiempoDeEspera else {
             return
         }
         momentoActual += 1
         
-        actualizacionDeLaVista()
+        actualizarLaVista()
         
         if momentoActual >= tiempoDeEspera {
             generarHaptic()

@@ -84,7 +84,7 @@ class ViewController: UIViewController {
         preguntasPorResponderProgressVIew.progress = progreso
     }
     
-    func obtenerBarraDeProgreso() -> Float {
+    private func obtenerBarraDeProgreso() -> Float {
         let progreso = Float(indiceDeLaPreguntaActual + 1) / Float(listaDePreguntas.count)
         return progreso
     }
@@ -189,8 +189,11 @@ class ViewController: UIViewController {
         }
     }
     
-    func actualizarAlerta() {
-        alertaFinal?.message = String(obtenerPuntaje())
+    private func actualizarAlerta() {
+        guard let alertaFinalSegura = alertaFinal else {
+            return
+        }
+        alertaFinalSegura.message = String(obtenerPuntaje())
     }
     
     private func obtenerPuntaje() -> Int {
@@ -198,8 +201,8 @@ class ViewController: UIViewController {
     }
     
     private func presentarAlerta() {
-        if let alertaSegura = alertaFinal {
-            present(alertaSegura, animated: true)
+        if let alertaFinalSegura = alertaFinal {
+            present(alertaFinalSegura, animated: true)
         }
     }
 }

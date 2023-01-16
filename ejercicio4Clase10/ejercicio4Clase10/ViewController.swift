@@ -70,7 +70,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func jugar () {
+    private func jugar () {
         ocultarBotonPresioname()
         iniciarTemporizadorParaMostrarBoton()
     }
@@ -112,7 +112,7 @@ class ViewController: UIViewController {
             self.ocultarBotonPresioname()
             self.sumarUnoAJuegosPerdidos()
             self.presentarAlertaFallaste()
-            self.actualizarLabel()
+            self.actualizarContadoresLabel()
         })
     }
     
@@ -126,7 +126,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private func actualizarLabel() {
+    private func actualizarContadoresLabel() {
         presentarJuegosTotalesEnElLabel()
         presentarJuegosGanadosEnElLabel()
         presentarJuegosPerdidosEnElLabel()
@@ -164,7 +164,7 @@ class ViewController: UIViewController {
     
     @IBAction func accionAlTocarBotonPresioname(_ sender: UIButton) {
         sumarUnoAJuegosGanados()
-        actualizarLabel()
+        actualizarContadoresLabel()
         presentarAlertaFelicitaciones()
         anularTimer()
     }

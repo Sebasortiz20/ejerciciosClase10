@@ -17,7 +17,7 @@ class ConfiguracionViewController: UIViewController {
     }
     
     private var alerta: UIAlertController?
-    private var aceptarAccion: UIAlertAction?
+    private var accionAceptar: UIAlertAction?
     private var tiempo: String?
     
     @IBOutlet weak var tiempoDeEsperaCampoDeTexto: UITextField!
@@ -36,17 +36,17 @@ class ConfiguracionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         crearAlerta()
-        configuracionAccionEnLaAlerta()
+        configurarAccionEnLaAlerta()
     }
     
     private func crearAlerta() {
         alerta = UIAlertController(title: Constantes.tituloDeLaAlerta, message: Constantes.cuerpoDeLaAlerta , preferredStyle: .alert)
     }
     
-    private func configuracionAccionEnLaAlerta() {
-        aceptarAccion = UIAlertAction(title: Constantes.tituloDelBotonDeLaAlerta, style: .default)
-        if let alertaSegura = alerta, let okAccionSegura = aceptarAccion  {
-            alertaSegura.addAction(okAccionSegura)
+    private func configurarAccionEnLaAlerta() {
+        accionAceptar = UIAlertAction(title: Constantes.tituloDelBotonDeLaAlerta, style: .default)
+        if let alertaSegura = alerta, let accionAceptarSegura = accionAceptar  {
+            alertaSegura.addAction(accionAceptarSegura)
         }
     }
     
@@ -79,4 +79,3 @@ class ConfiguracionViewController: UIViewController {
         performSegue(withIdentifier: Constantes.identificadorDelSegue, sender: self)
     }
 }
-
